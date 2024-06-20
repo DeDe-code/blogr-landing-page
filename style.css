@@ -266,11 +266,13 @@ nav {
   font-weight: var(--weight-500);
 }
 .header-text-container h4 {
+  color: green;
   margin-top: 2rem;
   font-size: clamp(1.35rem, 2.5vw, 2rem);
   font-weight: 200;
 }
 .header-btn-container {
+  border: 2px solid green;
   margin: 4rem auto;
   width: 80%;
   display: -webkit-box;
