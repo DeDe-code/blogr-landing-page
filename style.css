@@ -436,6 +436,7 @@ MOBILE MENU
 }
 
 .mobile-nav-link {
+  position: relative;
   padding: 1rem;
 }
 
@@ -445,8 +446,8 @@ MOBILE MENU
 
 .mobile-nav-link-arrow {
   position: absolute;
-  top: 45%;
-  left: 67%;
+  top: 25px;
+  left: 178px;
   width: 1rem;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
