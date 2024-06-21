@@ -426,7 +426,6 @@ MOBILE MENU
 }
 
 .mobile-links-container {
-  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 3;
