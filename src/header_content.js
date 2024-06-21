@@ -11,8 +11,8 @@ const headerContent = headerData
       <h4>${text}</h4>
     </div>
     <div class="header-btn-container">
-      <button class="btn header-btn">${startBtn}</button>
-      <button class="btn header-btn">${moreBtn}</button>
+      <button class="btn header-btn header-start-btn">${startBtn}</button>
+      <button class="btn header-btn header-more-btn">${moreBtn}</button>
     </div>
   `;
   })
