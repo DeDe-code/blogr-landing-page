@@ -446,7 +446,7 @@ MOBILE MENU
 
 .mobile-nav-link-arrow {
   position: absolute;
-  top: 25px;
+  top: 26px;
   left: 178px;
   width: 1rem;
   -webkit-transform: rotate(0);
@@ -827,8 +827,8 @@ TOGGLE CLASSES
   position: relative;
   width: 100%;
   max-width: var(--desktop);
-  height: 600px;
   margin: 15rem auto 10rem auto;
+  padding-block: 6rem;
   background: url('data:image/svg+xml,<svg width="1014" height="1018" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd"><rect fill="%233E4062" x="213" y="214" width="588" height="590" rx="294"/><rect stroke="%23878D92" opacity=".5" x=".5" y=".5" width="1013" height="1017" rx="506.5"/><rect stroke="%23878D92" x="170.5" y="171.5" width="673" height="675" rx="336.5"/></g></svg>'),
     var(--praimary-dark-blue);
   background-size: 610px;
@@ -844,7 +844,7 @@ TOGGLE CLASSES
   left: 50%;
   -webkit-transform: translate(-50%, -127%);
   -ms-transform: translate(-50%, -127%);
-  transform: translate(-50%, -120%);
+  transform: translate(-50%, -110%);
   width: 30rem;
 }
 
