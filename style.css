@@ -409,7 +409,7 @@ MOBILE MENU
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
   width: 300px;
-  position: fixed;
+  position: absolute;
   top: 11rem;
   left: 0;
   right: 0;
@@ -446,8 +446,8 @@ MOBILE MENU
 
 .mobile-nav-link-arrow {
   position: absolute;
-  top: 24px;
-  left: 178px;
+  top: 45%;
+  left: 67%;
   width: 1rem;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
