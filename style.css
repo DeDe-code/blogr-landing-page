@@ -426,6 +426,7 @@ MOBILE MENU
 }
 
 .mobile-links-container {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 3;
@@ -436,7 +437,6 @@ MOBILE MENU
 }
 
 .mobile-nav-link {
-  position: relative;
   padding: 1rem;
 }
 
