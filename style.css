@@ -302,7 +302,7 @@ nav {
 }
 
 .header-content {
-  margin: 6rem auto;
+  margin: 6rem auto 4rem auto;
   max-width: var(--desktop);
   width: 90%;
   display: -webkit-box;
