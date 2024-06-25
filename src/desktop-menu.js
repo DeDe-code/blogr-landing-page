@@ -11,7 +11,9 @@ const navItems = data
     const { mainLinks, icons, buttons } = item;
     return `
   <div class="logo-container">
-  <img src="${icons.logo}">  
+    <a href="/">
+      <img src="${icons.logo}">
+    </a>  
     </div>
     <div class="menu-icon-container">
       <img class="hamb-menu-icon" src="${icons.hamburgerIcon}">

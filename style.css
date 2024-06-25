@@ -74,7 +74,7 @@ img {
 }
 
 .btn {
-  width: 150px;
+  width: 130px;
   padding: 1rem;
   text-transform: capitalize;
   color: var(--neutral-white-text);
@@ -88,30 +88,34 @@ HEADER
 */
 
 header {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 2rem;
-  /* padding-bottom: 10rem; */
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3174" height="3175"><defs><linearGradient id="a" x1=".639%" x2="99.361%" y1="0%" y2="100%"><stop offset="0%" stop-color="%23FF8F71"/><stop offset="100%" stop-color="%23FF3E55"/></linearGradient></defs><path fill="url(%23a)" fill-rule="evenodd" d="M1973.15 1193.185v788.41h-786.766v-688.41c0-55.228 44.772-100 100-100h686.767zm-1310.445-1.171c217.26 0 393.383 176.124 393.383 393.383v1.645c0 217.26-176.123 393.383-393.383 393.383S269.322 1804.3 269.322 1587.042v-1.645c0-217.26 176.124-393.383 393.383-393.383zm392.212-926.418v688.41c0 55.23-44.771 100-100 100H268.151v-788.41h786.766zm918.234 0v788.41h-686.767c-55.228 0-100-44.771-100-100v-688.41h786.767z" transform="rotate(22 162.072 2556.164)"/></svg>'),
+  width: 100%;
+  max-width: var(--desktop);
+  margin: ;
+  background: url(../images/bg-pattern-intro-mobile.svg),
     -webkit-gradient(linear, left top, left bottom, from(var(--gradient-very-light-red)), to(var(--gradient-light-red)));
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3174" height="3175"><defs><linearGradient id="a" x1=".639%" x2="99.361%" y1="0%" y2="100%"><stop offset="0%" stop-color="%23FF8F71"/><stop offset="100%" stop-color="%23FF3E55"/></linearGradient></defs><path fill="url(%23a)" fill-rule="evenodd" d="M1973.15 1193.185v788.41h-786.766v-688.41c0-55.228 44.772-100 100-100h686.767zm-1310.445-1.171c217.26 0 393.383 176.124 393.383 393.383v1.645c0 217.26-176.123 393.383-393.383 393.383S269.322 1804.3 269.322 1587.042v-1.645c0-217.26 176.124-393.383 393.383-393.383zm392.212-926.418v688.41c0 55.23-44.771 100-100 100H268.151v-788.41h786.766zm918.234 0v788.41h-686.767c-55.228 0-100-44.771-100-100v-688.41h786.767z" transform="rotate(22 162.072 2556.164)"/></svg>'),
+  background: url(../images/bg-pattern-intro-mobile.svg),
     -o-linear-gradient(top, var(--gradient-very-light-red), var(--gradient-light-red));
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3174" height="3175"><defs><linearGradient id="a" x1=".639%" x2="99.361%" y1="0%" y2="100%"><stop offset="0%" stop-color="%23FF8F71"/><stop offset="100%" stop-color="%23FF3E55"/></linearGradient></defs><path fill="url(%23a)" fill-rule="evenodd" d="M1973.15 1193.185v788.41h-786.766v-688.41c0-55.228 44.772-100 100-100h686.767zm-1310.445-1.171c217.26 0 393.383 176.124 393.383 393.383v1.645c0 217.26-176.123 393.383-393.383 393.383S269.322 1804.3 269.322 1587.042v-1.645c0-217.26 176.124-393.383 393.383-393.383zm392.212-926.418v688.41c0 55.23-44.771 100-100 100H268.151v-788.41h786.766zm918.234 0v788.41h-686.767c-55.228 0-100-44.771-100-100v-688.41h786.767z" transform="rotate(22 162.072 2556.164)"/></svg>'),
+  background: url(../images/bg-pattern-intro-mobile.svg),
     linear-gradient(
       180deg,
       var(--gradient-very-light-red),
       var(--gradient-light-red)
     );
-  background-size: 1300px;
   background-repeat: no-repeat;
-  background-position: right 64% top 40%;
-  /* overflow: hidden; */
+  background-position: right 62% top 43%;
   border-bottom-left-radius: 50px;
 }
 
 nav {
-  margin: 2rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   max-width: var(--desktop);
   width: 90%;
   height: 5rem;
@@ -137,6 +141,7 @@ nav {
 .menu-icon-container {
   width: 2rem;
   cursor: pointer;
+  margin-right: 2rem;
 }
 
 .desktop-links-container {
@@ -144,6 +149,8 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   gap: 3.5rem;
   position: relative;
@@ -158,6 +165,8 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   height: 5rem;
   gap: 1rem;
@@ -171,9 +180,11 @@ nav {
   position: absolute;
   z-index: 1;
   top: 3rem;
-  width: 0;
+  width: 0rem;
   height: 0.2rem;
   background: var(--neutral-white-text);
+  -webkit-transition: 0.5s width ease-in-out;
+  -o-transition: 0.5s width ease-in-out;
   transition: 0.5s width ease-in-out;
 }
 
@@ -200,7 +211,7 @@ nav {
 
 .desktop-dropdown-menu {
   position: fixed;
-  top: 7rem;
+  top: 8.7rem;
   width: 200px;
   padding: 1rem 2rem 2rem 2rem;
   background: var(--neutral-white-text);
@@ -220,14 +231,6 @@ nav {
   -o-transition: opacity 0.7s ease-in-out;
   transition: opacity 0.7s ease-in-out;
 }
-
-/* .connect-desktop-dropdown {
-  left: 40%;
-}
-
-.company-desktop-dropdown {
-  left: 20%;
-} */
 
 .desktop-nav-link:hover .desktop-dropdown-menu,
 .desktop-nav-link:hover .desktop-dropdown-link {
@@ -259,6 +262,7 @@ nav {
 
 .desktop-btn-container {
   display: none;
+  margin-right: 2rem;
 }
 
 .desktop-nav-btn {
@@ -320,7 +324,7 @@ nav {
 }
 
 .header-title-container h2 {
-  font-size: clamp(2.5rem, 4.5vw, 4.2rem);
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
   font-weight: var(--weight-500);
 }
 .header-text-container h4 {
@@ -329,8 +333,8 @@ nav {
   font-weight: 200;
 }
 .header-btn-container {
-  margin: 4rem auto 6rem auto;
-  width: 80%;
+  margin: 4rem auto 3rem auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,22 +359,29 @@ nav {
 
 @media screen and (min-width: 480px) {
   header {
-    background-size: 1200px;
-    /* background-position: right 64% top 40%; */
   }
 }
 
 @media screen and (min-width: 768px) {
   header {
-    background-size: 1400px;
-    background-position: right 96% top 50%;
+    background: url(../images/bg-pattern-intro-desktop.svg),
+      -webkit-gradient(linear, left top, right top, from(var(--gradient-very-light-red)), to(var(--gradient-light-red)));
+    background: url(../images/bg-pattern-intro-desktop.svg),
+      -o-linear-gradient(left, var(--gradient-very-light-red), var(--gradient-light-red));
+    background: url(../images/bg-pattern-intro-desktop.svg),
+      linear-gradient(
+        90deg,
+        var(--gradient-very-light-red),
+        var(--gradient-light-red)
+      );
+    background-repeat: no-repeat;
+    background-position: right 55% top 50%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   header {
-    background-size: 2160px;
-    background-position: right 96% top 54%;
+    background-position: right 76% top 50%;
   }
 
   .menu-icon-container {
@@ -414,7 +425,6 @@ MOBILE MENU
   left: 0;
   right: 0;
   margin: 0 auto;
-  /* padding: 1rem; */
   background: var(--neutral-white-text);
   text-align: center;
   border-radius: 0.3rem;
@@ -514,18 +524,18 @@ MOBILE MENU
 
 .mobile-btn {
   padding-block: 1.4rem;
+  background: -o-linear-gradient(
+      right,
+      var(--gradient-light-red),
+      var(--gradient-very-light-red)
+    )
+    right / var(--p, 0) no-repeat;
   background: -webkit-gradient(
       linear,
       right top,
       left top,
       from(var(--gradient-light-red)),
       to(var(--gradient-very-light-red))
-    )
-    right / var(--p, 0) no-repeat;
-  background: -o-linear-gradient(
-      right,
-      var(--gradient-light-red),
-      var(--gradient-very-light-red)
     )
     right / var(--p, 0) no-repeat;
   background: linear-gradient(
@@ -545,18 +555,18 @@ MOBILE MENU
 }
 
 .mobile-btn-log-in {
+  background: -o-linear-gradient(
+      right,
+      var(--gradient-light-red),
+      var(--gradient-very-light-red)
+    )
+    right / var(--p, 0) no-repeat;
   background: -webkit-gradient(
       linear,
       right top,
       left top,
       from(var(--gradient-light-red)),
       to(var(--gradient-very-light-red))
-    )
-    right / var(--p, 0) no-repeat;
-  background: -o-linear-gradient(
-      right,
-      var(--gradient-light-red),
-      var(--gradient-very-light-red)
     )
     right / var(--p, 0) no-repeat;
   background: linear-gradient(
@@ -568,18 +578,18 @@ MOBILE MENU
 }
 
 .mobile-btn-sign-in {
+  background: -o-linear-gradient(
+      right,
+      var(--gradient-light-red),
+      var(--gradient-very-light-red)
+    )
+    left / var(--p, 0) no-repeat;
   background: -webkit-gradient(
       linear,
       right top,
       left top,
       from(var(--gradient-light-red)),
       to(var(--gradient-very-light-red))
-    )
-    left / var(--p, 0) no-repeat;
-  background: -o-linear-gradient(
-      right,
-      var(--gradient-light-red),
-      var(--gradient-very-light-red)
     )
     left / var(--p, 0) no-repeat;
   background: linear-gradient(
@@ -733,10 +743,7 @@ TOGGLE CLASSES
 }
 
 .tools-img-mobile {
-  max-width: 40rem;
-}
-
-@media screen and (min-width: 768px) {
+  max-width: 50rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -762,9 +769,14 @@ TOGGLE CLASSES
     flex-direction: row-reverse;
   }
 
+  .text-content {
+    -webkit-padding-start: 5rem;
+    padding-inline-start: 5rem;
+  }
+
   .text-content,
   .tools-text-content {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .text-content h3,
@@ -782,7 +794,7 @@ TOGGLE CLASSES
   .design-img-desktop {
     display: block;
     position: absolute;
-    width: 57rem;
+    width: 58rem;
     top: -13rem;
     right: -18rem;
   }
@@ -790,8 +802,8 @@ TOGGLE CLASSES
   .tools-img-desktop {
     display: block;
     position: absolute;
-    width: 57rem;
-    top: -11rem;
+    width: 65rem;
+    top: -8rem;
     left: -17rem;
   }
 }
@@ -801,16 +813,26 @@ TOGGLE CLASSES
     margin-bottom: 22rem;
   }
 
+  .tools-text-content {
+    margin: 3rem 15rem 0 0;
+    width: 37%;
+    gap: 0;
+  }
+
+  .tools-first-title-container {
+    line-height: 0;
+  }
+
   .design-img-desktop {
-    width: 73rem;
-    top: -18rem;
-    right: -24rem;
+    width: 67rem;
+    top: -17rem;
+    right: -21rem;
   }
 
   .tools-img-desktop {
-    width: 73rem;
-    top: -11rem;
-    left: -17rem;
+    width: 75rem;
+    top: -14rem;
+    left: -22rem;
   }
 }
 
@@ -826,8 +848,7 @@ TOGGLE CLASSES
   align-content: center;
   position: relative;
   width: 100%;
-  max-width: var(--desktop);
-  margin: 15rem auto 10rem auto;
+  margin: 15rem auto 0 auto;
   padding-block: 6rem;
   background: url('data:image/svg+xml,<svg width="1014" height="1018" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd"><rect fill="%233E4062" x="213" y="214" width="588" height="590" rx="294"/><rect stroke="%23878D92" opacity=".5" x=".5" y=".5" width="1013" height="1017" rx="506.5"/><rect stroke="%23878D92" x="170.5" y="171.5" width="673" height="675" rx="336.5"/></g></svg>'),
     var(--praimary-dark-blue);
@@ -842,8 +863,8 @@ TOGGLE CLASSES
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -127%);
-  -ms-transform: translate(-50%, -127%);
+  -webkit-transform: translate(-50%, -110%);
+  -ms-transform: translate(-50%, -110%);
   transform: translate(-50%, -110%);
   width: 30rem;
 }
@@ -942,11 +963,11 @@ TOGGLE CLASSES
   }
 
   .infrastructure-text-content {
-    width: 70%;
+    width: 56%;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    margin-left: 40rem;
+    align-items: flex-end;
+    margin-left: 38rem;
   }
 
   .infrastructure-text-content h3,
@@ -955,6 +976,15 @@ TOGGLE CLASSES
   }
   .infrastructure-text-content {
     margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .infrastructure-content img {
+    -webkit-transform: translate(-132%, -47%);
+    -ms-transform: translate(-132%, -47%);
+    transform: translate(-132%, -47%);
+    width: 43rem;
   }
 }
 
@@ -999,6 +1029,7 @@ footer {
 
 .footer-sub-links {
   margin-top: 2rem;
+  position: relative;
 }
 
 .footer-sub-links a {
