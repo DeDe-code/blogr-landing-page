@@ -73,8 +73,8 @@ img {
 }
 
 .btn {
-  width: 130px;
-  padding: 1rem;
+  width: 11rem;
+  padding: 0.7rem;
   text-transform: capitalize;
   color: var(--neutral-white-text);
   border: 1px solid var(--neutral-white-text);
@@ -107,8 +107,8 @@ header {
       var(--gradient-light-red)
     );
   background-repeat: no-repeat;
-  background-position: right 62% top 43%;
-  border-bottom-left-radius: 50px;
+  background-position: right 65% top 30%;
+  border-bottom-left-radius: 5rem;
 }
 
 nav {
@@ -186,12 +186,12 @@ nav {
 }
 
 .desktop-nav-link:hover:before {
-  width: 5rem;
+  width: 3.75rem;
 }
 
 .desktop-nav-link-arrow {
   position: relative;
-  top: -0.2rem;
+  top: -0.1rem;
   width: 1rem;
   -webkit-transition: -webkit-transform 0.7s ease-in-out;
   transition: -webkit-transform 0.7s ease-in-out;
@@ -208,7 +208,7 @@ nav {
 
 .desktop-dropdown-menu {
   position: fixed;
-  top: 8.7rem;
+  top: 5.3rem;
   width: 200px;
   padding: 1rem 2rem 2rem 2rem;
   background: var(--neutral-white-text);
@@ -259,7 +259,6 @@ nav {
 
 .desktop-btn-container {
   display: none;
-  margin-right: 2rem;
 }
 
 .desktop-nav-btn {
@@ -303,7 +302,8 @@ nav {
 }
 
 .header-content {
-  margin: 6rem auto 4rem auto;
+  margin: 4rem auto 2rem auto;
+  padding-top: 1rem;
   max-width: var(--desktop);
   width: 90%;
   display: -webkit-box;
@@ -321,12 +321,12 @@ nav {
 }
 
 .header-title-container h2 {
-  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  font-size: clamp(2.3rem, 4.5vw, 3.5rem);
   font-weight: var(--weight-500);
 }
 .header-text-container h4 {
   margin-top: 2rem;
-  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-size: clamp(1.35rem, 2.5vw, 1.5rem);
   font-weight: 200;
 }
 .header-btn-container {
@@ -346,7 +346,7 @@ nav {
 
 .header-btn {
   padding-block: 1.2rem;
-  font-size: clamp(0.9rem, 1.7vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.7vw, 0.9rem);
   font-weight: 600;
   cursor: pointer;
   -webkit-transition: background-color 0.5s ease-in-out;
@@ -378,7 +378,7 @@ nav {
 
 @media screen and (min-width: 1024px) {
   header {
-    background-position: right 76% top 50%;
+    background-position: right 60% top 53%;
   }
 
   .menu-icon-container {
@@ -403,6 +403,12 @@ nav {
     -ms-flex-pack: end;
     justify-content: flex-end;
     gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-position: right 93% top 52.5%;
   }
 }
 
@@ -453,8 +459,8 @@ MOBILE MENU
 
 .mobile-nav-link-arrow {
   position: absolute;
-  top: 22px;
-  left: 180px;
+  top: 1.8rem;
+  left: 11.25rem;
   width: 1rem;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
@@ -504,7 +510,7 @@ MOBILE MENU
 }
 .mobile-btn-container {
   margin: 0 auto;
-  width: 130px;
+  width: 8.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +521,7 @@ MOBILE MENU
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   padding: 1.5rem 0;
 }
@@ -667,7 +674,7 @@ TOGGLE CLASSES
 .design-title-container {
   width: 90%;
   text-align: center;
-  font-size: clamp(2rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.7rem);
 }
 
 .design-content,
@@ -711,12 +718,16 @@ TOGGLE CLASSES
   padding-inline: 2rem;
 }
 
+.tools-text-content {
+  gap: 2rem;
+}
+
 .design-content-first-title-container,
 .design-content-second-title-container,
 .tools-first-title-container,
 .tools-second-title-container {
   text-transform: capitalize;
-  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 300;
 }
 
@@ -725,7 +736,7 @@ TOGGLE CLASSES
 .tools-first-content-container,
 .tools-second-text-content {
   margin-top: 3rem;
-  font-size: clamp(1.1rem, 2vw, 1.2rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   font-weight: 200;
   line-height: 2;
 }
@@ -740,7 +751,7 @@ TOGGLE CLASSES
 }
 
 .tools-img-mobile {
-  max-width: 50rem;
+  max-width: 45rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -766,14 +777,9 @@ TOGGLE CLASSES
     flex-direction: row-reverse;
   }
 
-  .text-content {
-    -webkit-padding-start: 5rem;
-    padding-inline-start: 5rem;
-  }
-
   .text-content,
   .tools-text-content {
-    max-width: 45%;
+    width: 50%;
   }
 
   .text-content h3,
@@ -791,17 +797,17 @@ TOGGLE CLASSES
   .design-img-desktop {
     display: block;
     position: absolute;
-    width: 58rem;
-    top: -13rem;
-    right: -18rem;
+    width: 45rem;
+    top: -10rem;
+    right: -14rem;
   }
 
   .tools-img-desktop {
     display: block;
     position: absolute;
-    width: 65rem;
-    top: -8rem;
-    left: -17rem;
+    width: 45rem;
+    top: -4rem;
+    left: -14rem;
   }
 }
 
@@ -811,8 +817,8 @@ TOGGLE CLASSES
   }
 
   .tools-text-content {
-    margin: 3rem 15rem 0 0;
-    width: 37%;
+    margin: 3rem 6rem 0 0;
+    width: 50%;
     gap: 0;
   }
 
@@ -821,15 +827,34 @@ TOGGLE CLASSES
   }
 
   .design-img-desktop {
-    width: 67rem;
-    top: -17rem;
-    right: -21rem;
+    width: 47rem;
+    top: -12rem;
+    right: -15rem;
   }
 
   .tools-img-desktop {
-    width: 75rem;
+    width: 47rem;
+    top: -3rem;
+    left: -15rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .design-part,
+  .text-content {
+    padding-inline-start: 0;
+  }
+
+  .design-img-desktop {
+    width: 69rem;
+    top: -18rem;
+    right: -35rem;
+  }
+
+  .tools-img-desktop {
+    width: 69rem;
     top: -14rem;
-    left: -22rem;
+    left: -36rem;
   }
 }
 
@@ -845,13 +870,13 @@ TOGGLE CLASSES
   align-content: center;
   position: relative;
   width: 100%;
+  height: 36rem;
   margin: 15rem auto 0 auto;
   padding-block: 6rem;
-  background: url('data:image/svg+xml,<svg width="1014" height="1018" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd"><rect fill="%233E4062" x="213" y="214" width="588" height="590" rx="294"/><rect stroke="%23878D92" opacity=".5" x=".5" y=".5" width="1013" height="1017" rx="506.5"/><rect stroke="%23878D92" x="170.5" y="171.5" width="673" height="675" rx="336.5"/></g></svg>'),
-    var(--praimary-dark-blue);
+  background: url("../images/bg-pattern-circles.svg"), var(--praimary-dark-blue);
   background-size: 610px;
   background-repeat: no-repeat;
-  background-position: right 50% top -18rem;
+  background-position: right 50% top -14rem;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
 }
@@ -860,10 +885,8 @@ TOGGLE CLASSES
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -110%);
-  -ms-transform: translate(-50%, -110%);
-  transform: translate(-50%, -110%);
-  width: 30rem;
+  transform: translate(-50%, -112%);
+  width: 26rem;
 }
 
 .infrastructure-content {
@@ -887,8 +910,9 @@ TOGGLE CLASSES
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 3rem;
-  margin-top: 13rem;
+  gap: 1.7rem;
+  width: 90%;
+  margin: 9rem auto 0 auto;
   line-height: 1.5;
 }
 
@@ -898,7 +922,8 @@ TOGGLE CLASSES
 }
 
 .infrastructure-text-content p {
-  width: 25rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -909,23 +934,20 @@ TOGGLE CLASSES
     background-position: left -2rem top -27rem;
   }
   .infrastructure-content img {
-    -webkit-transform: translate(-96%, -47%);
-    -ms-transform: translate(-96%, -47%);
-    transform: translate(-96%, -47%);
-    width: 35rem;
+    transform: translate(-100%, -47%);
+    width: 24rem;
+  }
+  .infrastructure-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .infrastructure-text-content {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    width: 98%;
-    text-align: left;
-    margin: 3rem 0 0 3rem;
-  }
-
-  .infrastructure-text-content p {
-    width: 29rem;
+    width: 54%;
+    margin: 0;
+    padding-inline: 1rem;
   }
 }
 
@@ -935,15 +957,13 @@ TOGGLE CLASSES
   }
 
   .infrastructure-content img {
-    -webkit-transform: translate(-96%, -47%);
-    -ms-transform: translate(-96%, -47%);
-    transform: translate(-96%, -47%);
-    width: 43rem;
+    transform: translate(-105%, -47%);
+    width: 31rem;
   }
 
   .infrastructure-text-content {
-    width: 70%;
-    margin-left: 20rem;
+    width: 50%;
+    align-items: flex-start;
   }
 }
 
@@ -953,35 +973,33 @@ TOGGLE CLASSES
   }
 
   .infrastructure-content img {
-    -webkit-transform: translate(-120%, -47%);
-    -ms-transform: translate(-120%, -47%);
     transform: translate(-120%, -47%);
-    width: 43rem;
+    width: 32rem;
   }
 
   .infrastructure-text-content {
-    width: 56%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-end;
-    margin-left: 38rem;
-  }
-
-  .infrastructure-text-content h3,
-  .infrastructure-text-content p {
-    width: 70%;
-  }
-  .infrastructure-text-content {
-    margin-top: 4rem;
+    width: 55%;
+    align-items: flex-start;
+    padding-right: 5rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .infrastructure-part {
+    background-size: 61rem;
+    background-position: left -13.5rem top -25rem;
+  }
   .infrastructure-content img {
-    -webkit-transform: translate(-132%, -47%);
-    -ms-transform: translate(-132%, -47%);
-    transform: translate(-132%, -47%);
-    width: 43rem;
+    transform: translate(-145%, -47%);
+    width: 33rem;
+  }
+
+  .infrastructure-text-content {
+    width: 45%;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-right: 7rem;
+    padding-right: 5rem;
   }
 }
 
