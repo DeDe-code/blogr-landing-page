@@ -412,6 +412,12 @@ nav {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  header {
+    background-position: right 96% top 52.5%;
+  }
+}
+
 @media screen and (min-width: 2560px) {
   header {
     background-position: right 138% top 52.5%;
@@ -1017,10 +1023,17 @@ TOGGLE CLASSES
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .infrastructure-part {
+    background-size: 67rem;
+    background-position: left -19rem top -25rem;
+  }
+}
+
 @media screen and (min-width: 2560px) {
   .infrastructure-part {
-    background-size: 61rem;
-    background-position: left 7rem top -25rem;
+    background-size: 81rem;
+    background-position: left -7rem top -40rem;
   }
 
   .infrastructure-text-content {
