@@ -412,6 +412,12 @@ nav {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  header {
+    background-position: right 78% top 52.5%;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   header {
     background-position: right 96% top 52.5%;
@@ -852,31 +858,24 @@ TOGGLE CLASSES
 }
 
 @media screen and (min-width: 1440px) {
-  .design-part,
-  .text-content {
+  .design-part {
+    width: 90%;
+    margin-bottom: 10rem;
     padding-inline-start: 0;
   }
 
   .design-img-desktop {
-    width: 69rem;
-    top: -18rem;
-    right: -35rem;
+    width: 60rem;
+    top: -15rem;
+    right: -24rem;
   }
 
   .tools-img-desktop {
-    width: 69rem;
-    top: -14rem;
-    left: -36rem;
+    width: 60rem;
+    top: -10rem;
+    left: -18rem;
   }
 }
-
-/* @media screen and (min-width: 2000px) {
-  .design-img-desktop {
-    width: 100rem;
-    top: -18rem;
-    right: -65rem;
-  }
-} */
 
 /*
  INFRASTRUCTURE-PARt
@@ -1006,11 +1005,11 @@ TOGGLE CLASSES
 
 @media screen and (min-width: 1440px) {
   .infrastructure-part {
-    background-size: 61rem;
+    background-size: 56rem;
     background-position: left -13.5rem top -25rem;
   }
   .infrastructure-content img {
-    transform: translate(-145%, -47%);
+    transform: translate(-126%, -47%);
     width: 33rem;
   }
 
@@ -1061,7 +1060,7 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   gap: 4rem;
-  padding-block: 5rem;
+  padding-top: 5rem;
   text-transform: capitalize;
   line-height: 2;
   background: var(--neutral-footer-background);
